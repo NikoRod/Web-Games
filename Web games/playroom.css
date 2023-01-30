@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/Images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* MAIN TITLE */
+
+.playroom {
+    background-color: rgb(126, 188, 216);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.playroom a {
+    font-size: 65px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Rubik Moonrocks', cursive;
+    color: #000;
+}
+
+/* GAMES SECTION */
+
+.games-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 50px 3px 0px 3px;
+    justify-items: center;
+    animation: bounceInUp;
+    animation-duration: 1.2s;
+}
+
+.game {
+    justify-content: end;
+    align-items: center;
+    align-self: start;
+    justify-items: center;
+}
+
+.game a img {
+    width: 400px;
+    height: 300px;
+    border: 1px solid rgb(83, 83, 83);
+    border-radius: 2px;
+}
+
+.game p {
+    font-size: 23px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+/* RESPOSIVE: LAPTOP */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .games-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+    .games-section {
+        grid-template-columns: repeat(1, 1fr);
+        animation: none;
+    }
+}

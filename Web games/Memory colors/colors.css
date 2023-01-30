@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: inline-grid;
+    place-items: center;
+    width: 100%;
+    font-family: 'Merriweather', serif;
+    background-color: #6b5c7c;
+}
+
+/* MAIN TITLE */
+
+.playroom {
+    background-color: rgb(126, 188, 216);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.playroom a {
+    font-size: 65px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Rubik Moonrocks', cursive;
+    color: #000;
+}
+
+/* GAME */
+
+.simon {
+    margin-top: 100px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.buttonContainer {
+    display: inline-grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto;
+}
+
+.circle {
+    border-radius: 80px;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
+
+.circle:active,
+.active {
+    filter: brightness(125%);
+}
+
+.red {
+    background-color: #EE6352;
+}
+
+.blue {
+    background-color: #08B2E3;
+}
+
+.green {
+    background-color: #57A773;
+}
+
+.yellow {
+    background-color: #FFDF64;
+}
+
+#startButton {
+    width: 90px;
+    position: absolute;
+    margin-left: 15em;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: none;
+    font-family: 'Merriweather', serif;
+    cursor: pointer;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #a1a3a5;
+    padding: 8px;
+}
+
+#startButton:hover {
+    background-color: rgb(228, 225, 225);
+    transition: .2s;
+}
+
+#startButton:disabled {
+    background-color: rgb(228, 225, 225);
+}
+
+.title {
+    width: min-content;
+}

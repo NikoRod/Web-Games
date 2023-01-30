@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.background {
+    background-color: #5b7d92;
+    height: 100%;
+}
+
+/* MAIN TITLE */
+
+.playroom {
+    background-color: rgb(126, 188, 216);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.playroom a {
+    font-size: 65px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Rubik Moonrocks', cursive;
+    color: #000;
+}
+
+/* GAME */
+
+.title {
+    color: rgb(241, 241, 241);
+    text-align: center;
+    font-size: 45px;
+    padding-top: 3%;
+}
+
+.display {
+    color: rgb(241, 241, 241);
+    font-size: 25px;
+    text-align: center;
+    margin-top: .2em;
+    margin-bottom: 1em;
+}
+
+.hide {
+    display: none;
+}
+
+.container {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    max-width: 300px;
+
+}
+
+.tile {
+    border: 1px solid rgb(241, 241, 241);
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    cursor: pointer;
+}
+
+.playerX {
+    color: #ff0000;
+}
+
+.playerO {
+    color: #005eff;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.controls button {
+    color: #fff;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    margin-left: 1em;
+    cursor: pointer;
+}
+
+#reset {
+    background-color: #a8a6a6;
+}
+
+#reset:hover {
+    background-color: #4d4d4e;
+    transition: .1s;
+}
+
+
+/* RESPONSIVE: MOBILE */
+
+@media screen and (min-width: 320px) {
+    
+    .background {
+        height: 120%;
+    }
+}

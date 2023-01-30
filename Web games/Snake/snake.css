@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    background-color: rgb(132, 167, 147);
+    scroll-behavior: inherit;
+  }
+
+  /* MAIN TITLE */
+
+.playroom {
+  background-color: rgb(126, 188, 216);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.playroom a {
+  font-size: 65px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'Rubik Moonrocks', cursive;
+  color: #000;
+}
